@@ -1,5 +1,15 @@
 import React from 'react';
-import { UseFormRegister, FieldError } from 'react-hook-form';
+import { UseFormRegister, FieldError, Path, FieldValues } from 'react-hook-form';
+
+type TextareaFieldProps = {
+    id: Path<FieldValues>;  // Fazendo id ser um Path genérico para qualquer tipo de FieldValues
+    label: string;
+    placeholder?: string;
+    register: UseFormRegister<FieldValues>;
+    error?: FieldError;
+    rows?: number;
+};
+// import { UseFormRegister, FieldError } from 'react-hook-form';
 
 // type TextareaFieldProps = {
 //     id:string;
@@ -9,15 +19,6 @@ import { UseFormRegister, FieldError } from 'react-hook-form';
 //     error?: FieldError;
 //     rows?: number;
 // };
-
-type TextareaFieldProps = {
-    id: string & {}; 
-    label: string;
-    placeholder?: string;
-    register: UseFormRegister<any>;
-    error?: FieldError;
-    rows?: number;
-};
 
 const TextareaField: React.FC<TextareaFieldProps> = ({
     id,

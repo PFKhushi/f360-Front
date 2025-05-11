@@ -25,7 +25,7 @@ const TextareaField: React.FC<TextareaFieldProps> = ({
     label,
     placeholder = '',
     register,
-    error,
+    //error,
     rows = 2,
 }) => {
     return(

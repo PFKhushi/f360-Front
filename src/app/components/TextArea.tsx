@@ -1,8 +1,17 @@
 import React from 'react';
 import { UseFormRegister, FieldError } from 'react-hook-form';
 
+// type TextareaFieldProps = {
+//     id:string;
+//     label: string;
+//     placeholder?: string;
+//     register: UseFormRegister<any>;
+//     error?: FieldError;
+//     rows?: number;
+// };
+
 type TextareaFieldProps = {
-    id:string;
+    id: string & {}; 
     label: string;
     placeholder?: string;
     register: UseFormRegister<any>;

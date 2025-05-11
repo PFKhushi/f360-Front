@@ -23,7 +23,7 @@ export default function Register(){
           <div className='w-full max-w-[503px] h-[1px] bg-white' />
           <p className='text-center text-xl md:text-[24px]'>Qual a classificação do seu perfil?</p>
         </div>
-       
+      
         <div className='text-xl md:text-[24px] flex flex-col md:flex-row gap-[50px] pb-10'>
           <Link href={'/register/participante'}>
             <div className='flex justify-center items-center bg-primary-1 w-44 md:w-55 h-24 md:h-30 drop-shadow-[5px_5px_4px] drop-shadow-secondary-2 rounded-[20px] transition duration-300 active:translate-[3px] active:drop-shadow-[1px_1px_4px]'>
